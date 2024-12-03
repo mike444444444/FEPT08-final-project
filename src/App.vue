@@ -1,0 +1,20 @@
+<template>
+  <div>
+    <h1 class="text-8xl text-center font-black text-emerald-800">{{ title }}</h1>
+  </div>
+</template>
+<script>
+export default {
+  name: "App",
+  data(){
+    return{
+      title: "Hola!!!!🚀"
+    }
+  }
+
+  
+}
+</script>
+<style>
+  
+</style>

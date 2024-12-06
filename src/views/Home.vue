@@ -1,11 +1,9 @@
 <template>
-    <div>
-        
-        <div class="url('../src/imagenes/ovejas3.jpg')">
-        <h2 class="text-white font-serif text-4xl">{{title}}</h2> 
-        </div>
+    <div>      
+      <h2 class="text-4xl">{{title}}</h2> 
     </div>
 </template>
+
 <script>
 export default {
     name: "Home",

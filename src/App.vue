@@ -1,6 +1,6 @@
 <template>
-  <div class="containerTop">
-    <div class="flex flex-row justify-between bg-stone-800 p-4 gap-8 text-white">
+  <div class="navContainer">
+    <div class="flex flex-row justify-between p-4 gap-8 text-white">
       <h1 class="text-6xl text-left font-black text-white ml-4">{{ title }}</h1>  
       
       <nav class="flex flex-row gap-6 p-7">       

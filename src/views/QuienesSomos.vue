@@ -46,7 +46,7 @@
         </div>
     </div>
 
-</div class="">
+</div class="footer">
     <h2 class="bg-stone-800 text-white text-xl text-center p-4">El pastoret</h2>
       <div class="flex flex-row items-center justify-between bg-stone-800 p-4 text-white">        
         <p class="text-left text-xs ml-12 text-yellow-100">Mas Girbau s/n  25716 Gósol (Lleida) Tel.992 256 839</p>

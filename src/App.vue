@@ -3,7 +3,7 @@
     <div class="flex flex-row justify-between p-4 gap-8 text-white">
       <h1 class="text-6xl text-left font-black text-white ml-4">{{ title }}</h1>  
       
-      <nav class="flex flex-row gap-6 p-7">       
+      <nav class="flex flex-row gap-6 p-7 ml-24">       
           <router-link to="/">Inicio</router-link>
           <router-link to="/quienesSomos">Quienes somos</router-link>
           <router-link to="/nuestrosQuesos">Nuestros quesos</router-link>

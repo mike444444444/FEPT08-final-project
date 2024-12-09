@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import NotFound from './views/NotFound.vue'
 import QuienesSomos from './views/QuienesSomos.vue'
 import NuestrosQuesos from './views/NuestrosQuesos.vue'
+import ValoresNutricionales from './views/ValoresNutricionales.vue'
 
 const routes= [
     {path: '/', 
@@ -11,7 +12,7 @@ const routes= [
      component: Home
     },    
     {path: '/quienesSomos',
-     name: "QuienesSomos", 
+     name: 'QuienesSomos', 
      component: QuienesSomos
     },
     {path: '/nuestrosQuesos', 
@@ -19,8 +20,12 @@ const routes= [
      component: NuestrosQuesos
     },
     {path: '/:path(.*)',
-     name: 'Not found',
+     name: 'notFound',
      component: NotFound
+    },
+    {path: '/valoresNutricionales',
+     name: "ValoresNutricionales",
+     component: ValoresNutricionales
     }
     ]
 

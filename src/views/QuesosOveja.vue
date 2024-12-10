@@ -1,48 +1,70 @@
 <template>
-    
-      <div class="mainContainer">
-      <h2 class="text-4xl text-end text-bold p-20 text-gray-900">{{title}}</h2> 
-      </div>
+    <div class="p-28 bg-stone-300">
+        <h1 class="text-center font-bold text-red-500"> {{title}}</h1>        
+    </div>
 
-      <div class="bg-slate-300 p-8 shadow-xl">
-        <p class="text-gray-800 text-l text-bold border-y-gray-600 text-center"><i>Quesos artesanales de oveja y de cabra.</i></p>
-        <p class="text-gray-600 text-l text-bold border-y-gray-600 text-align:center px-32 "><i>Nuestro proceso artesanal y la calidad de la leche de nuestras ovejas y cabras nos permite elaborar quesos artesanos gourmet que sorprenderán 
-          a cualquier amante de los quesos. Tanto el queso de leche cruda de oveja como el curado de oveja hechiza a los paladares más exigentes.
-          El sabor de los quesos elaborados con la leche de nuestras cabras no dejará indiferente a los comensales.</i></p>
-        </br>
-        <p class="text-gray-800 text-l text-bold border-y-gray-600 text-center"><i>Prueba nuestros quesos artesanales.</i></p>
-      </div>
-
-      <div class="midContainer shadow-xl">
-        <div class="grid grid-cols-4 place-items-center  p-8 gap-10 bg-gray-200">
-          <div>
-             <img class="w-60 h-60 border-2 rounded-lg" src="/src/imagenes/quesosdeoveja.jpg">
-             <a href="#" class="text-sm  text-gray-700 hover:text-red-600 underline">Nuestros quesos de oveja   🐑</a>
-             <router-link to="/quesosOveja"></router-link>
-            </div>
-          <div>
-             <img class="w-60 h-60 border-2 rounded-lg" src="/src/imagenes/quesosdecabra.jpg">
-             <a href="#" class="text-sm text-gray-700 hover:text-red-600 underline">Nuestros quesos de cabra   🐐</a>
+  <div class="main">
+  <ul class="cards">
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="/src/imagenes/pastoret.jpg" alt=""></div>
+        <div class="card_content">
+          <h2 class="card_title text-center">pastoret</h2>
+          <div class="card_text">
+            <p>Queso curado de oveja elaborado de forma artesanal con leche de oveja. Gracias a una maduración lenta de más de dos meses, este queso consigue una textura compacta y firme. La calidad de la leche utilizada hace que este queso desprenda un intenso aroma a leche fresca que al cortarlo se transfiere en cada bocado. 
+              El queso curado de oveja Pastoret tiene un gusto a leche absorbente y limpio con matices claros a frutos secos tostados. 
+              En boca es quebradizo y cremoso, con un punto ligeramente picante y salado.
+            </p>
+            <p>Maridaje: El queso curado de oveja es ideal para acompañar una amplia variedad de entrantes y tablas de embutidos. Su aroma intenso y sabor penetrante lo convierte en la mejor opción para combinar 
+              con mermeladas de higo, tomate, cerezas, membrillo y jaleas.
+            </p>
+            <p>Además, se marida muy bien con vinos dulces afrutados, pero también con vinos finos y manzanillas.</p>
+            <p>
+            </p>
           </div>
         </div>
-      
       </div>
+    </li>
 
-      <div class="flex place-content-around p-8  bg-slate-300 gap-2 shadow-xl">
-        <img class="w-24 h-24" src="/src/imagenes/Venda.png" alt="logotipo de venta de proximidad">
-        <img class="w-24 h-24 rounded-lg" src="/src/imagenes/biosphere.jpg" alt="logotipo certificado Biosphere">
-        <img class="w-24 h-24 rounded-lg" src="/src/imagenes/greenfarm.jpg">
-        <img class="w-24 h-24 rounded-lg" src="/src/imagenes/ecos.jpg">
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="/src/imagenes/Barroc.jpg" alt="foto de queso madurado llamado Barroc"></div>
+        <div class="card_content">
+          <h2 class="card_title text-center">barroc</h2>
+          <div class="card_text">
+            <p>Queso de oveja curado Barroc. Se obtiene después de una elaboración artesanal a base de leche cruda de oveja. De maduración larga y lenta de más de seis meses, este queso posee un aroma agradable e intenso. Su corteza es natural y rústica sin presencia de moho, protegiendo un interior de color amarillo tornándose ligeramente de color caramelo en los extremos. De textura firme, quebradiza y ligeramente granulosa, este queso curado de oveja con leche cruda tiene un sabor intenso en boca con un punto picante y salado.
+               En cada corte desprende un intenso aroma de leche de oveja y de forrajes frescos.
+            </p>
+            <p>Maridaje: Por su carácter quebradizo y picante, este queso de oveja curado es ideal para añadir en forma de escamas en ensaladas, acompañar mermeladas de higo, tomates o cerezas, o simplemente en una tabla de quesos y embutidos. Para aprovechar su esplendor,
+              degústalo con vino tinto o dulce, cerveza tostada o cava.</p>
+            <p>¡Déjate sorprender por este queso curado elaborado con leche cruda de oveja!
+            </p>
+           
+          </div>
+        </div>
       </div>
-
-      
-
-
-
-
-
-
-    <div class="footer">
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="/src/imagenes/Tacatdetofona.jpg" alt="foto de queso curado de oveja con tófona"></div>
+        <div class="card_content">
+          <h2 class="card_title text-center">tacat de tófona</h2>
+          <div class="card_text">
+            <p><span class="note">sensacional.</span></p>
+            <p>Un suculento bocado lleno de aroma y sensualidad.</p>
+            <p>Queso curado de oveja curado durante un mínimo de 4 meses con trazas aromáticas que le propociona la tófona (trufa negra recolectada en los bosques próximos a la finca.)
+            </p>
+            <p>De sabor fino y elegante, el quesero consigue una delicada armonía entre las notas lácteas y el aroma de la trufa negra. Al olfato, el queso ofrece aromas primarios de la leche, lácticos a nata y mantequilla 
+              conjugados con los aromas de la trufa.
+              Para degustar toda la riqueza de sabores se recomienda el consumo a temperatura ambiente.
+              Es impresionante su utilización en cocina: pastas, risottos, carpaccios e incluso derritiendo en finas lonchas sobre un huevo frito… Lo acompañaremos de vinos espumosos, cavas, champagne.</p>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>    
+<div class="footer">
     <h2 class="bg-stone-800 text-white text-xl text-center p-4">El pastoret</h2>
       <div class="flex flex-row items-center justify-between bg-stone-800 p-4 text-white">        
         <p class="text-left text-xs ml-12 text-yellow-100">Mas Girbau s/n  25716 Gósol (Lleida) Tel.992 256 839</p>
@@ -69,21 +91,20 @@
         <p class="mb-6"><u>Política de Cookies</u></p>
        
     </div>
+</div>
 
-   </div>
+
 </template>
 
 <script>
 export default {
-    name: "Home",
-    data(){
-        return{    
-        title: "Quesos artesanos de oveja y de cabra"
-     }
+  name: "QuesosOveja",
+  data(){
+    return{
+      title: "Quesos de oveja",
     }
-  }
-
+  }  
+}
 </script>
-<style>
-    
+<style>   
 </style>

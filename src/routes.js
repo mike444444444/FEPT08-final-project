@@ -3,9 +3,10 @@ import { createWebHashHistory, createRouter } from 'vue-router'
 import Home from './views/Home.vue'
 import NotFound from './views/NotFound.vue'
 import QuienesSomos from './views/QuienesSomos.vue'
-import NuestrosQuesos from './views/NuestrosQuesos.vue'
+import QuesosCabra from './views/QuesosCabra.vue'
 import ValoresNutricionales from './views/ValoresNutricionales.vue'
-import Contacto from './views/Contacto.vue'
+import QuesosOveja from './views/QuesosOveja.vue'
+// import Contacto from './views/Contacto.vue'
 
 
 const routes= [
@@ -17,9 +18,9 @@ const routes= [
      name: 'QuienesSomos', 
      component: QuienesSomos
     },
-    {path: '/nuestrosQuesos', 
-     name: 'NuestrosQuesos',
-     component: NuestrosQuesos
+    {path: '/quesosOveja', 
+     name: 'QuesosOveja',
+     component: QuesosOveja
     },
     {path: '/:path(.*)',
      name: 'notFound',
@@ -28,11 +29,11 @@ const routes= [
     {path: '/valoresNutricionales',
      name: "ValoresNutricionales",
      component: ValoresNutricionales
+    },
+    {path: '/quesosCabra',
+     name: "QuesosCabra",
+     component: QuesosCabra
     }
-    // {path: '/contacto',
-    //  name: "Contacto",
-    //  component: Contacto
-    // }
     ]
 
 const router = createRouter({

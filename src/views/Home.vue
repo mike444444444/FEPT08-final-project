@@ -4,30 +4,30 @@
       <h2 class="text-4xl text-end text-bold p-20 text-gray-900">{{title}}</h2> 
       </div>
 
-      <div class="bg-slate-300 p-8">
+      <div class="bg-slate-300 p-8 shadow-xl">
         <p class="text-gray-800 text-l text-bold border-y-gray-600 text-center"><i>Quesos artesanales de oveja y de cabra.</i></p>
-        <p class="text-gray-600 text-l text-bold border-y-gray-600 text-center"><i>Nuestro proceso artesanal y la calidad de la leche de nuestras ovejas y cabras nos permite elaborar quesos artesanos gourmet que sorprenderán 
+        <p class="text-gray-600 text-l text-bold border-y-gray-600 text-align:center px-32 "><i>Nuestro proceso artesanal y la calidad de la leche de nuestras ovejas y cabras nos permite elaborar quesos artesanos gourmet que sorprenderán 
           a cualquier amante de los quesos. Tanto el queso de leche cruda de oveja como el curado de oveja hechiza a los paladares más exigentes.
           El sabor de los quesos elaborados con la leche de nuestras cabras no dejará indiferente a los comensales.</i></p>
         </br>
         <p class="text-gray-800 text-l text-bold border-y-gray-600 text-center"><i>Prueba nuestros quesos artesanales.</i></p>
       </div>
 
-      <div class="midContainer w-full md:w-auto">
-        <div class="flex  gap-20 place-content-around p-8  bg-gray-200">
+      <div class="midContainer shadow-xl">
+        <div class="grid grid-cols-4  place-items-center  p-8 gap-10 bg-gray-200">
           <div>
              <img class="w-60 h-60 border-2 rounded-lg" src="/src/imagenes/quesosdeoveja.jpg">
-             <a href="#" class="font-medium text-center text-gray-700 hover:text-red-600 underline">Nuestros quesos de oveja</a>
+             <a href="#" class="text-sm  text-gray-700 hover:text-red-600 underline">Nuestros quesos de oveja   🐑</a>
           </div>
           <div>
              <img class="w-60 h-60 border-2 rounded-lg" src="/src/imagenes/quesosdecabra.jpg">
-             <a href="#" class="font-medium text-gray-700 hover:text-red-600 underline">Nuestros quesos de cabra</a>
+             <a href="#" class="text-sm text-gray-700 hover:text-red-600 underline">Nuestros quesos de cabra   🐐</a>
           </div>
         </div>
       
       </div>
 
-      <div class="flex place-content-around p-8  bg-slate-400 gap-2">
+      <div class="flex place-content-around p-8  bg-slate-300 gap-2 shadow-xl">
         <img class="w-24 h-24" src="/src/imagenes/Venda.png" alt="logotipo de venta de proximidad">
         <img class="w-24 h-24 rounded-lg" src="/src/imagenes/biosphere.jpg" alt="logotipo certificado Biosphere">
         <img class="w-24 h-24 rounded-lg" src="/src/imagenes/greenfarm.jpg">

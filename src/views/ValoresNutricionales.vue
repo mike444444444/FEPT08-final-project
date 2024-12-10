@@ -1,13 +1,22 @@
 <template>
-    <div>
-        <form class="flex flex-col items-center">
-            <input class="border border-zinc-300 rounded-lg"
-                 placeholder="Queso"
-                 v-model="queso">
+    <div class="p-28 bg-stone-300">
+        <p class="text-neutral-900 font-bold text-xl text-center"><i>Valores nutricionales</i></p>
+        <p class="text-neutral-800 f text-sm text-align-center  p-4"><i>Como productores de quesos, apoyamos la divulgación del conocimiento 
+            del queso. Colaboramos, a nivel local y nacional, en programas de difusión y promoción de las propiedades nutricionales del queso.
+            Os presentamos una herramienta interactiva en la que vais a poder comprobar los valores nutricionales de diversos tipos de quesos,
+            tanto nacionales como internacionales.</i>
+        </p>
+        <p class="text-neutral-600 font-bold text-sm text-align-center  p-4"><i>Introduce el nombre del queso del que quieras conocer sus propiedades nutricionales y composición:</i>
+        </p>
+    </div>  
+    <div class=" bg-stone-300">
+        <form class="flex flex-col items-center gap-4">
+            <input class="border border-zinc-300 rounded-lg text-center text-neutral-400"
+                 placeholder="Nombre del queso"
+                 v-model="queso">        
         
-        
-            <button class="bg-zinc-700 py-2 px-8 rounded-lg hover:bg-zinc-900"
-                    @click.prevent="getQueso">
+            <button class="bg-zinc-500 py-2 px-8 rounded-lg hover:bg-zinc-800 text-white"
+                    @click.prevent="getQueso">Comprobar
             </button>
         </form>
         
@@ -18,7 +27,7 @@
             <p>Carbohidratos:{{cheese.carbs}}g</p>
             <p>Proteínas:{{cheese.protein}}g</p>
         </div>
-        <p v-show="error" class="text-red-800 bg-red-200 py-10 text-center mt-10"
+        <p v-show="error" class="text-red-800 bg-red-200 py-6 text-center mt-6"
            >Queso no he encontrado, prueba con otro tipo de queso</p> 
         <p v-show="loading" class="text-3xl text-indigo-400">cargando.....</p>
         

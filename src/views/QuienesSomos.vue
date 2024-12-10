@@ -1,11 +1,11 @@
 <template>
  <div class="bg-stone-300">
     <div class="Historia">
-        <h3 class="text-center font-extrabold text-red-700 p-28">Historia</h3>
+        <h3 class="text-center font-extrabold text-red-700 pt-32">Historia</h3>
         <div class="flex flex-row">    
-            <img class="border-2 rounded-lg border-gray-600 object-cover w-100 h-60 ml-14" src="/src/imagenes/historia.jpg" alt="foto del año 1956 de la familia en la quesería">
+            <img class="border-2 rounded-lg border-gray-600 object-cover w-100 h-60 ml-14 shadow-xl" src="/src/imagenes/historia.jpg" alt="foto del año 1956 de la familia en la quesería">
             <p class="p-14 mr-8">En 1956 la familia Codina empezó a elaborar artesanalmente quesos con la leche de su propia ramaderia.
-                   Una tradición que se ha mantenido con la tercera generación al frente, conservando el espíritu inicial
+                   Una tradición que continua con la tercera generación al frente, conservando el espíritu inicial
                    de los pioneros, manteniendo el proceso artesanal, lo que nos permite ofrecer una gama de exquisitos quesos
                    artesanales con todas las propiedades y sabores de la leche de nuestras ovejas y cabras.
             </p>            
@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <div class="Elaboracion mt-8">
+    <div class="Elaboracion mt-8 pb-4">
         <h3 class="text-center font-extrabold text-red-700 mt-4">Elaboración artesanal</h3>
         <div class="flex flex-row"> 
         <p class="p-16 mt-2">Aplicamos únicamente técnicas artesanales heredadas en la elaboración de nuestros quesos con tal de poder mantener 

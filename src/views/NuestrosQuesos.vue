@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="p-32">
         <h1 class="text-center font-bold text-red-500"> {{title}}</h1>        
     </div>
 </template>

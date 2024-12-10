@@ -5,6 +5,8 @@ import NotFound from './views/NotFound.vue'
 import QuienesSomos from './views/QuienesSomos.vue'
 import NuestrosQuesos from './views/NuestrosQuesos.vue'
 import ValoresNutricionales from './views/ValoresNutricionales.vue'
+import Contacto from './views/Contacto.vue'
+
 
 const routes= [
     {path: '/', 
@@ -27,6 +29,10 @@ const routes= [
      name: "ValoresNutricionales",
      component: ValoresNutricionales
     }
+    // {path: '/contacto',
+    //  name: "Contacto",
+    //  component: Contacto
+    // }
     ]
 
 const router = createRouter({

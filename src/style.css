@@ -38,8 +38,9 @@
     /* width: full; */
     /* width: 820px; */
     height: 340px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    /* justify-content: center; */
+    box-shadow: darkslategray;
 }
 
     

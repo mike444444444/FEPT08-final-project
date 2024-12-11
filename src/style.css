@@ -41,7 +41,7 @@
     display: grid;
     /* justify-content: center; */
     box-shadow: darkslategray;
-}
+   }
 
     
     /* .card{
@@ -59,6 +59,7 @@
         --transition-timing: 0.35s;
     }  */
 
+    /* estilos paginas Quesos de Oveja / Quesos de cabra */
     *,
     *::before,
     *::after {
@@ -86,26 +87,10 @@
     .card_image {
       height: calc(13*1.2rem);
       padding: 1.2rem 1.2rem 0;
-      position:relative;
-      
+      position:relative;      
     }
     .card_image:before,
-    /* .card_image:after{
-      content: "";
-      position: absolute;
-      width: 20px;
-      left: 60%;
-      top: 0;
-      height: 45px;
-      background: #e6e6e6b8;
-      transform: rotate(45deg);
-    } */
-    /* .card_image:after{
-      transform: rotate(-45deg);
-      top:auto;
-      bottom:-22px;
-      left:40%;
-    } */
+    
     .card_image img {
       width:100%;
       height:100%;
@@ -134,17 +119,12 @@
       padding: 1.2rem;
     }
     
-    h2.card_title,p {
+     h2.card_title,p {
       margin: 1.2rem 0;
     }
     h2.card_title {
         font-size: 1.3em;
             }
-    /* body {
-      font-family:monospace;
-      background:#eee;
-    }
-    
-    html {
-      font-size:15px;
-    } */
+
+            
+            

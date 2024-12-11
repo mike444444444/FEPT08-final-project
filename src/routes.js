@@ -6,6 +6,8 @@ import QuienesSomos from './views/QuienesSomos.vue'
 import QuesosCabra from './views/QuesosCabra.vue'
 import ValoresNutricionales from './views/ValoresNutricionales.vue'
 import QuesosOveja from './views/QuesosOveja.vue'
+import Tienda from './views/Tienda.vue'
+
 // import Contacto from './views/Contacto.vue'
 
 
@@ -33,6 +35,10 @@ const routes= [
     {path: '/quesosCabra',
      name: "QuesosCabra",
      component: QuesosCabra
+    },
+    {path: '/tienda',
+        name: "Tienda",
+        component: Tienda
     }
     ]
 

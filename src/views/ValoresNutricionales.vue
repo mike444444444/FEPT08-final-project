@@ -13,11 +13,13 @@
         <form class="flex flex-col items-center gap-4">
             <input class="border border-zinc-300 rounded-lg text-center text-neutral-400"
                  placeholder="Nombre del queso"
-                 v-model="queso">        
+                 v-model="queso">  
+                 
+               
         
-            <button class="bg-zinc-500 py-2 px-8 rounded-lg hover:bg-zinc-800 text-white"
+            <!-- <button class="bg-zinc-500 py-2 px-8 rounded-lg hover:bg-zinc-800 text-white"
                     @click.prevent="getQueso">Comprobar
-            </button>
+            </button> -->
         </form>
         
         <div v-if="cheese">

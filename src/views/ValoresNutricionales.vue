@@ -13,21 +13,19 @@
         <form class="flex flex-col items-center gap-4">
             <input class="border border-zinc-300 rounded-lg text-center text-neutral-400"
                  placeholder="Nombre del queso"
-                 v-model="queso">  
-                 
-               
+                 v-model="queso">                                 
         
-            <!-- <button class="bg-zinc-500 py-2 px-8 rounded-lg hover:bg-zinc-800 text-white"
+            <button class="bg-zinc-500 py-2 px-8 rounded-lg hover:bg-zinc-800 text-white"
                     @click.prevent="getQueso">Comprobar
-            </button> -->
+            </button>
         </form>
         
         <div v-if="cheese">
-            <h2>Tipo de queso:{{cheese.name}}</h2>
+            <!-- <h2>Tipo de queso:{{cheese.name}}</h2>
             <p>Calorías:{{cheese.calories}}kcal</p>
             <p>Grasa:{{cheese.fat}}g</p>
             <p>Carbohidratos:{{cheese.carbs}}g</p>
-            <p>Proteínas:{{cheese.protein}}g</p>
+            <p>Proteínas:{{cheese.protein}}g</p> -->
         </div>
         <p v-show="error" class="text-red-800 bg-red-200 py-6 text-center mt-6"
            >Queso no he encontrado, prueba con otro tipo de queso</p> 
@@ -52,13 +50,14 @@ export default {
         getQueso(){
             this.error= false,
             this.loading= true;
-            fetch(`https://platform.fatsecret.com/rest/food/v4? q= ${this.queso}&appid=${this.API_KEY}`)
+            fetch(`https://platform.fatsecret.com/rest/food/v4?q=&appid=${this.API_KEY}`)
             .then((response)=>{
                 if(!response.ok){
                     this.loading= false;
                     this.error= true;
                 throw newError(`Queso no he encontrado, prueba con otro tipo de queso ${response.status}`);
                 }
+                console.log(response);
                 return response.json();
             })
             .then((data)=>{

@@ -1,5 +1,5 @@
 <template>
-  <div class="navContainer">
+  <div class="navContainer z-10">
     <div class="flex flex-row justify-between p-4 gap-8 text-white">
       <h1 class="text-6xl text-left font-black text-white ml-4">{{ title }}</h1>  
       

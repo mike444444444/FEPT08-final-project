@@ -7,6 +7,7 @@ import QuesosCabra from './views/QuesosCabra.vue'
 import ValoresNutricionales from './views/ValoresNutricionales.vue'
 import QuesosOveja from './views/QuesosOveja.vue'
 import Tienda from './views/Tienda.vue'
+import Carrito from './views/Carrito.vue'
 
 // import Contacto from './views/Contacto.vue'
 
@@ -39,7 +40,13 @@ const routes= [
     {path: '/tienda',
         name: "Tienda",
         component: Tienda
-    }
+    },
+    {path: '/carrito',
+        name: "Carrito",
+        component: Carrito
+    },
+
+
     ]
 
 const router = createRouter({

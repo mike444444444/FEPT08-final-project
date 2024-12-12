@@ -76,6 +76,8 @@
 </template>
 
 <script>
+import QuesosOveja from '/src/views/QuesosOveja.vue'
+
 export default {
     name: "Home",
     data(){

@@ -26,7 +26,7 @@
   
       <li class="cards_item">
         <div class="card">
-          <div class="card_image"><img src="/src/imagenes/Petricó.jpg" alt="foto de queso madurado llamado Barroc"></div>
+          <div class="card_image"><img src="/src/imagenes/petrico.jpg" alt="foto de queso madurado llamado Barroc"></div>
           <div class="card_content">
             <h2 class="card_title text-center">petricó</h2>
             <div class="card_text">

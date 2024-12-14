@@ -46,9 +46,9 @@
     </li>
     <li class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="/src/imagenes/Tacatdetofona.jpg" alt="foto de queso curado de oveja con tófona"></div>
+        <div class="card_image"><img src="/src/imagenes/tofona.jpg" alt="foto de queso curado de oveja con tófona"></div>
         <div class="card_content">
-          <h2 class="card_title text-center">tacat de tófona</h2>
+          <h2 class="card_title text-center">tófona</h2>
           <div class="card_text">
             <p><span class="note">sensacional.</span></p>
             <p>Un suculento bocado lleno de aroma y sensualidad.</p>

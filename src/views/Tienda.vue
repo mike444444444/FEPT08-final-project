@@ -1,20 +1,13 @@
 <template>
-    <div class="p-48">
-        <header>           
-           <button v-on:click="navigateTo('products')">Mostrar nuestros quesos</button>
+    <div class="p-48 bg-stone-300">
+        <header class="flex gap-10 justify-center">           
+           <button v-on:click="navigateTo('products')">🧀 Mostrar nuestros quesos</button>
            {{ cart.length }}  artículos en el carrito
-           <button v-on:click="navigateTo('cart')">Mostrar carrito</button>
+           <button v-on:click="navigateTo('cart')">Mostrar carrito 🛒</button>
         </header> 
 
         <div v-if="page === 'cart'">
-            <h1>Tu carrito</h1>
-            <div v-for="(product,index) in cart" :key="product.name">{{ product.name }}    
-                <div>{{ product.milk }}</div>
-                <div>{{ product.weight}}</div>
-                <div>{{ product.price}}</div>
-            <button v-on:click="removeItemFromCart(product)">Eliminar del 🛒
-            </button> 
-            </div>
+         <Cart v-on:removeItemFromCart="removeItemFomCart"></Cart>
         </div>
 
         <div v-if="page === 'products'">
@@ -22,12 +15,15 @@
         </div>
     </div>  
        
-    
+    <!-- <Footer> -->
+
 </template>
 
 
 <script>
 import Products from '../components/Products.vue';
+import Cart from '../components/Cart.vue';
+import Footer from '../components/Footer.vue';
 
 
 export default {
@@ -106,7 +102,7 @@ export default {
        
         },
     components: {
-        Products},
+        Products, Cart},
     }
     
     
@@ -126,11 +122,14 @@ export default {
 header{
     height: 60 px;
     background-color: darkslategray;
-    text-align: right;
+    text-align:center;
+  
     color:aliceblue;
     box-shadow: 2px 2px 5px #999;
-    font-size: 30px;
+    font-size: 20px;
     padding-top: 20px;
     padding-right: 8px;
 }
+
+
 </style>

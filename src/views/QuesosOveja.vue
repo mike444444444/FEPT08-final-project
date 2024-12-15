@@ -1,7 +1,10 @@
 <template>
-    <div class="p-28 bg-stone-300">
-        <h1 class="text-center font-bold text-red-500"> {{title}}</h1>        
-    </div>
+  <div class="p-32 bg-stone-300">
+      <h1 class="text-center font-bold text-red-500"> {{title}}</h1>    
+      <p class="text-sm font-semibold text-slate-800"><i>Presentamos nuestra gama de quesos gourmet confeccionados 
+        con pura leche procedente de nuestra propia ganaderia selecta de ovejas pirenaicas</i>
+     </p>  
+  </div>
 
   <div class="main">
   <ul class="cards">
@@ -63,8 +66,8 @@
       </div>
     </li>
   </ul>
-</div>    
-<div class="footer">
+  </div>    
+  <div class="footer">
     <h2 class="bg-stone-800 text-white text-xl text-center p-4">El pastoret</h2>
       <div class="flex flex-row items-center justify-between bg-stone-800 p-4 text-white">        
         <p class="text-left text-xs ml-12 text-yellow-100">Mas Girbau s/n  25716 Gósol (Lleida) Tel.992 256 839</p>
@@ -83,7 +86,7 @@
             </svg>
         </div> 
         <a href class="text-yellow-100 text-xs mr-12 mailto:formatgeselpastoret@mail.com">formatgeselpastoret@mail.com</a>
-    </div>
+  </div>
     <div class="flex flex-row bg-stone-800 text-xs text-yellow-100 justify-center space-x-4 p-4">
         <p><u>Blog</u></p>
         <p><u>Nota Legal</u></p>
@@ -91,7 +94,7 @@
         <p class="mb-6"><u>Política de Cookies</u></p>
        
     </div>
-</div>
+  </div>
 
 
 </template>
@@ -101,7 +104,7 @@ export default {
   name: "QuesosOveja",
   data(){
     return{
-      title: "Quesos de oveja",
+      title: "Nuestros quesos elaborados con leche de oveja"
     }
   }  
 }

@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <h1>Nuestros quesos</h1>
-        <div v-for="(product,index) in products" :key="product.name">{{ product.name }}    
+    <h1 class="mt-10 text-center text-2xl font-bold text-red-800"><i>Nuestros quesos</i></h1>
+    <div class="products">
+            <div v-for="(product,index) in products" :key="product.name">{{ product.name }}    
             <div>{{ product.milk }}</div>
             <div>{{ product.weight}}</div>
             <div>{{ product.price}}</div>
@@ -78,6 +78,23 @@ export default {
    },
 }
 </script>
-<style>
+
+<style scoped>  
+.products{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 30;
+    justify-content: space-between;
+    margin-top: 40px;
+    text-align: center;
+}
+.products button{
+    background-color:teal;
+    border-radius: 1ch;
+    color:lightgray;
+    margin-top: 10px;
     
+}
+
+
 </style>

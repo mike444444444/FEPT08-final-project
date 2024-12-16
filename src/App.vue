@@ -10,7 +10,7 @@
         <router-link to="/quesosOveja">Quesos de oveja</router-link>
         <router-link to="/quesosCabra">Quesos de cabra</router-link>
         <router-link to="/tienda">Tienda</router-link>
-        <router-link to="/valoresNutricionales">Valores nutricionales</router-link>
+        <router-link to="/venAConocernos">Ven a conocernos</router-link>
         <router-link to="/carrito"><svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -27,7 +27,7 @@
 </template>
 
 <script>
-// import { routerView,routerLink} from 'vue-router';
+import Footer from '/src/components/Footer.vue'
 export default {
   name: "App",
   data() {

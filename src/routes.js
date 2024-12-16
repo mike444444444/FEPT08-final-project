@@ -4,7 +4,7 @@ import Home from './views/Home.vue'
 import NotFound from './views/NotFound.vue'
 import QuienesSomos from './views/QuienesSomos.vue'
 import QuesosCabra from './views/QuesosCabra.vue'
-import ValoresNutricionales from './views/ValoresNutricionales.vue'
+import VenAConocernos from './views/VenAConocernos.vue'
 import QuesosOveja from './views/QuesosOveja.vue'
 import Tienda from './views/Tienda.vue'
 import Carrito from './views/Carrito.vue'
@@ -29,9 +29,9 @@ const routes= [
      name: 'notFound',
      component: NotFound
     },
-    {path: '/valoresNutricionales',
-     name: "ValoresNutricionales",
-     component: ValoresNutricionales
+    {path: '/venAConocernos',
+     name: "VenAConocernos",
+     component: VenAConocernos
     },
     {path: '/quesosCabra',
      name: "QuesosCabra",

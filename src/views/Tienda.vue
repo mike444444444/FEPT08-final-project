@@ -4,10 +4,10 @@
         
         
 
-        <div class="header flex gap-10 justify-center mt-8">           
-           <button v-on:click="navigateTo('products')">🧀 Mostrar nuestros quesos</button>
+        <div class="header flex gap-16 justify-center mt-8">           
+           <button class="hover:text-yellow-300" v-on:click="navigateTo('products')">🧀 Mostrar nuestros quesos</button>
            {{ cart.length }}  artículos en el carrito
-           <button v-on:click="navigateTo('cart')">Mostrar carrito 🛒</button>
+           <button class="hover:text-yellow-300" v-on:click="navigateTo('cart')">Mostrar carrito 🛒</button>
         </div> 
 
         <div v-if="page === 'cart'">
@@ -21,7 +21,7 @@
         </div>
     </div>  
        
-    <!-- <Footer> -->
+   <Footer></Footer>
 
 </template>
 
@@ -128,13 +128,15 @@ export default {
 .header{
     height: 60 px;
     background-color: darkslategray;
-    text-align:center;
-  
+    text-align:center;  
     color:aliceblue;
     box-shadow: 2px 2px 5px #999;
     font-size: 20px;
     padding-top: 20px;
     padding-right: 8px;
+    cursor:pointer;
+    
+    
 }
 
 

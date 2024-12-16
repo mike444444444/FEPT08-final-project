@@ -5,7 +5,7 @@
             <div>{{ product.milk }}</div>
             <div>{{ product.weight}}</div>
             <div>{{ product.price}}</div>
-            <button v-on:click="addItemToCart(product)">Añadir al 🛒
+            <button v-on:click="addItemToCart(product)">añadir al 🛒
             </button>          
          </div>  
     </div>
@@ -89,12 +89,35 @@ export default {
     text-align: center;
 }
 .products button{
-    background-color:teal;
+    /* background-color:teal;
     border-radius: 1ch;
     color:lightgray;
-    margin-top: 10px;
-    
+    margin-top: 10px; */
+  width: 140px;
+  height: 35px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  color: #000;
+  background-color:rgb(64, 111, 111);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-top: 10px;
+  }
+
+.products button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
+
 
 
 </style>

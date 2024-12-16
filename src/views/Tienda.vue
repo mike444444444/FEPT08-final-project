@@ -1,17 +1,23 @@
 <template>
-    <div class="p-48 bg-stone-300">
-        <header class="flex gap-10 justify-center">           
+    <div class="p-40 bg-stone-300">
+        <h1 class="text-center text-red-600 font-bold text-xl">¡ Bienvenidos a nuestra tienda !</h1>
+        
+        
+
+        <div class="header flex gap-10 justify-center mt-8">           
            <button v-on:click="navigateTo('products')">🧀 Mostrar nuestros quesos</button>
            {{ cart.length }}  artículos en el carrito
            <button v-on:click="navigateTo('cart')">Mostrar carrito 🛒</button>
-        </header> 
+        </div> 
 
         <div v-if="page === 'cart'">
-         <Cart v-on:removeItemFromCart="removeItemFomCart"></Cart>
+       
+         <Cart :cart="cart"
+         v-on:removeItemFromCart="removeItemFromCart"></Cart>
         </div>
 
         <div v-if="page === 'products'">
-        <Products v-on:addItemToCart="addItemToCart"></Products>  
+        <Products v-on:add-item-to-cart="addItemToCart"></Products>  
         </div>
     </div>  
        
@@ -35,7 +41,7 @@ export default {
         products: [{
         id:1,
         name: "pastoret",
-        img:"/src/imagenes/juliette.jpg", 
+        img: "src/imagenes.pastoret.jpg",
         milk: "oveja",
         price:"24 €",
         weight: "500 gr.",
@@ -90,11 +96,11 @@ export default {
     methods: {
         addItemToCart(product) {
             this.cart.push(product);
-                   console.log(this.cart);                                
+            console.log(this.cart);                                
         },
 
-        removeItemFomCart(product){
-            this.cart.splice(this.cart.indexOf(product));
+        removeItemFromCart(product){
+            this.cart.splice(this.cart.indexOf(product),1);
         },
         navigateTo(page) {
             this.page = page;
@@ -119,7 +125,7 @@ export default {
     gap: 30;
     justify-content: space-between;
 }
-header{
+.header{
     height: 60 px;
     background-color: darkslategray;
     text-align:center;

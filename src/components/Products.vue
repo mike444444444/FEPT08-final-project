@@ -1,11 +1,11 @@
 <template>
-    <h1 class="mt-10 text-center text-2xl font-bold text-red-800"><i>Nuestros quesos</i></h1>
-    <div class="products">
-            <div v-for="(product,index) in products" :key="product.name">{{ product.name }}    
+    <p class="text-center text-gray-700  text-base"><i>Agrega al carrito los productos que quieras comprar</i></p>
+    <div class="products mt-4">
+        <div v-for="(product,index) in products" :key="product.name">{{ product.name }}    
             <div>{{ product.milk }}</div>
             <div>{{ product.weight}}</div>
             <div>{{ product.price}}</div>
-            <button v-on:click="addItemtoCart(product)">Añadir al 🛒
+            <button v-on:click="addItemToCart(product)">Añadir al 🛒
             </button>          
          </div>  
     </div>
@@ -71,11 +71,11 @@ export default {
     
  },
    methods: {
-    addItemtoCart(product) {
-        this.$emit("addItemTCart",product);
+    addItemToCart(product) {
+        this.$emit("addItemToCart",product);
     }
-    
    },
+   emits:['addItemToCart']
 }
 </script>
 

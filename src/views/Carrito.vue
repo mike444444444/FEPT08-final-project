@@ -1,9 +1,10 @@
 <template>
-    <div class="p-32">
-        CARRITO
+    <div class="p-40">
+      <h1 class="text-center text-black">Tu carrito con los productos seleccionados</h1> 
     </div>
     {{ getlistaArticulos }} 
-    <button @click="$event => addItem()">add</button>
+    <!-- <button @click="$event => addItem()">add</button> -->
+     <!-- <button v-on:click="removeItemFromCart"></button> -->
 
 
 </template>

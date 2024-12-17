@@ -1,92 +1,50 @@
 <template>
-    <div class="p-32">
-        <div class="btn">
+  <div class="p-48">
+      <!-- Component.vue -->
+    <h2>Total Clics: {{ store.totalClicks }}</h2>
+
+    <div class="card">
+      <button type="button" @click="store.increment('a')">
+      Option A clicked {{ store.options['a'] }} times
+      </button>
+
+      <button type="button" @click="store.delayedIncrement('b')">
+      Option B clicked {{ store.options['b'] }} times
+      </button>
+
+      <button type="button" @click="store.increment('c')">
+      Option C clicked {{ store.options['c'] }} times
+      </button>
+    </div>
   
-  <i class="fa fa-cog fa-6" id="setting"></i>
-  
-</div>
-</div>
+  </div>
 </template>
 
 
+
+<!-- Component.vue -->
 <script>
+import { createPinia } from 'pinia'
+import { useCounterStore } from '../stores/counter';
+// const store = useCounterStore();
+
+
+
 
 export default {
   name:"Carrito",
     data() {
       return {
       }
-    }    
+    }, 
+    computed: {
+      store(){
+        return useCounterStore()
+      }
+    }  
 }
 </script>
 
-<style scoped>
-.btn {
-  background: #38925e;
-  width: 170px;
-  height: 50px;
-  border-radius: 10px;
-  cursor: pointer;
-  overflow: hidden;
-  /*To Make Div In Center*/
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
+<style>
 
-.btn:before {
-  content: "Setting";
-  color: #FFF;
-  font-family: arial;
-  font-size: 20px;
-  line-height: 50px;
-  position: absolute;
-  margin: auto;
-  margin-left: 50%;
-  transition: all 1s ease-in-out;
-  transform: translate(-50%, 0%);
-}
-
-.btn:hover:before {
-  position: absolute;
-  transform: translateX(100px);
-  transition: all 1s ease-in-out;
-}
-
-#setting {
-  color: #FFF;
-  font-size: 25px;
-  margin: auto;
-  line-height: 50px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  transform: translateX(-120px);
-  transition: all 1s ease-in-out;
-}
-
-.btn:hover #setting {
-  transform: translateX(0px);
-  animation: setting 2s ease-in-out infinite;
-  animation-delay: .9s;
-  transition: all 1s ease-in-out;
-}
-
-@keyframes setting {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-
-
-
-
-
-    
 </style>

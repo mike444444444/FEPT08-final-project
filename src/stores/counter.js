@@ -1,24 +1,28 @@
-import { defineStore } from "pinia";
 
-const useCounterStore = defineStore('counter',{
-    state: () =>({
-        count: 0,
-        name: "Jordi",
-        title: "avui es 10/12/2024"
+
+import {defineStore} from 'pinia';
+import { createPinia } from 'pinia'
+
+export const useCounterStore = defineStore('counter', {
+    state: () => ({
+        options: {
+            a: 0,
+            b: 0,
+            c: 0,
+        },
     }),
-
-    getters: {
-        doubleCount: (state) => {return state.count * 2},
-        multiplyFour: (state) => {return state.count * 4},
-        halfCount: (state) => {return state.count / 2},
-    },
-
     actions: {
-        increment(){
-            return this.count++
-        }
-    } 
-
-})
+        increment(option) {
+            this.options[option]++;
+        },
+    },
+    getters: {
+        totalClicks() {
+            return Object.values(this.options).reduce((total, current) => {
+                return total + current;
+            }, 0);
+        },
+    },
+});
 
 export default useCounterStore

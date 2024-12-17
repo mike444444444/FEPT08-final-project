@@ -10,11 +10,12 @@
             <button class="eliminar" v-on:click="removeItemFromCart(product)">eliminar del 🛒
             </button> 
             </div>     
-        </div>   
+        </div>
     </div>
    
-    <div class="btn mt-96">  
-        <i class ="fa fa-cog fa-6" id="setting"></i>
+    <div class="btn ">  
+     
+      <i class ="fa fa-cog fa-6" id="setting"></i>
     </div>
 
    
@@ -45,18 +46,12 @@ export default {
   height: 50px;
   border-radius: 10px;
   cursor: pointer;
-  overflow: hidden;
-  /*To Make Div In Center*/
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  overflow: hidden; 
+  position: fixed;
 }
 
 .btn:before {
-  content: "Pedido";
+  content: "🚎";
   color: #FFF;
   font-family: arial;
   font-size: 20px;
